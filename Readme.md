@@ -1,5 +1,3 @@
-# Blazor examples with DevExpress components
+### DxDataGrid for Blazor - How to show/hide columns based on certain properties
 
-[DevExpress UI for Blazor](https://github.com/DevExpress/Blazor) version 0.0.12
-
-Client Blazor coming soon
+This example illustrates how to control the visibility of DxDataGrid's columns using the *Visible* property.
