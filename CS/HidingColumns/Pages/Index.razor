@@ -23,7 +23,7 @@ else
                 <DxDataGridColumn Field=@nameof(WeatherForecast.TemperatureC) Caption="Temp. (C)" Visible=@IsTempCShown></DxDataGridColumn>
                 <DxDataGridSpinEditColumn Field=@nameof(WeatherForecast.TemperatureF) Caption="Temp. (F)" Visible=@IsTempFShown></DxDataGridSpinEditColumn>
                 <DxDataGridColumn Field=@nameof(WeatherForecast.Summary) Caption="Summary" Visible=@IsSummarShown></DxDataGridColumn>
-                <DxDataGridDateEditColumn Field=@nameof(WeatherForecast.Date) Visible=@IsDateShown DisplayFormatString="dd/MM/yyyy"></DxDataGridDateEditColumn>
+                <DxDataGridDateEditColumn Field=@nameof(WeatherForecast.Date) Visible=@IsDateShown DisplayFormat="dd/MM/yyyy"></DxDataGridDateEditColumn>
             </DxDataGrid>
         </div>
         <DxFormLayout CssClass="ColumnChooserlFormLayout">
