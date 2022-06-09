@@ -6,17 +6,15 @@
     .ColumnChooserlFormLayout {
         width: 200px;
     }
-
-        .ColumnChooserlFormLayout .dxbs-fl-gd.col-md-12 {
-            margin: 0px;
-        }
+    .ColumnChooserlFormLayout .dxbs-fl-gd.col-md-12 {
+        margin: 0px;
+    }
 </style>
-@if (forecasts == null)
-{
+
+@if (forecasts == null) {
     <h1>Loading...</h1>
 }
-else
-{
+else {
     <div style="display:flex;">
         <div style="width:500px;">
             <DxDataGrid Data=@forecasts ShowPager="false">
@@ -52,16 +50,17 @@ else
         </DxFormLayout>
     </div>
 }
-@functions {
-    WeatherForecast[] forecasts;
+
+@code {
+    WeatherForecast[]? forecasts;
 
     bool IsTempCShown = true;
     bool IsTempFShown = true;
     bool IsSummarShown = true;
     bool IsDateShown = true;
 
-    protected override async Task OnInitializedAsync()
-    {
+    protected override async Task OnInitializedAsync() {
         forecasts = await ForecastService.GetForecastAsync();
     }
 }
+
